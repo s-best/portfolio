@@ -1,0 +1,232 @@
+$off-white: #E5F0E7;
+$dark-grey: #3B3A3A;
+$red: #F45B69;
+
+$head-font: 'Oswald', sans-serif;
+$body-font: 'Roboto Condensed', sans-serif;
+
+body {
+	margin: 0;
+	background-color: $off-white;
+}
+
+
+h1 {
+	font-family: $head-font;
+	font-weight: 700;
+	color: $dark-grey;
+}
+
+h2 {
+	font-family: $head-font;
+	font-weight: 400;
+	color: $dark-grey;
+}
+
+p {
+	font-family: $body-font;
+	color: $dark-grey;
+	font-weight: 400;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+.link {
+	margin-right: 3rem;
+	font-size: 1.2rem;
+	color: $dark-grey;
+}
+.link:hover {
+	border-bottom: 5px solid $red;
+}
+
+
+header {
+	padding: 7rem 6rem;
+	height: 100vh;
+	box-sizing: border-box;
+}
+
+.name {
+	margin-bottom: -1rem;
+}
+.title {
+	margin: 0;
+}
+.under-line {
+	width: 100%;
+	border-bottom: 1px solid $dark-grey;
+}
+
+nav {
+	font-family: $body-font;
+	color: $dark-grey;
+	font-weight: 300;
+}
+ul {
+	margin: 0.25rem 0 0 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+li {
+	display: inline;
+}
+
+.center {
+	margin: auto;
+	display: grid;
+	align-content: center;
+	justify-content: center;
+}
+
+.hello {
+	font-family: $body-font;
+	color: $red;
+	font-size: 4rem;
+	margin: 7rem 0 -0.5rem 0;
+	text-align: left;
+}
+.greeting  {
+	color: $red;
+	font-size: 4rem;
+	margin: 0;
+	text-align: left;
+}
+
+.about {
+	height: 100vh;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+
+	img {
+		margin: auto auto 4rem auto;
+		max-width: 50%;
+	}
+}
+
+
+.projects {
+	padding: 7rem 9rem;
+	box-sizing: border-box;
+	position: relative;
+
+	img {
+		width: 100%;
+	}
+}
+
+.DnDice {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 1.5rem;
+
+	a{
+		grid-column: 2 / 3;
+	}
+	p {
+		grid-column: 3 / 4;
+	}
+}
+
+.other-p-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 1.5rem;
+	margin-top: 9rem;
+
+	a {
+		grid-column: 1 / 3;
+
+	}
+	p {
+		grid-column: 1 / 3;
+	}
+}
+
+.contact {
+	height: 8rem;
+	width: 100vw;
+	margin: 8rem auto;
+	font-weight: 300;
+	position: relative;
+	bottom: 0;
+	text-align: center;
+
+	span {
+		color: $red;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	h1 {
+		font-size: 1.5rem;
+	}
+
+	li {
+		margin-right: 1rem;
+	}
+
+	header {
+		padding: 7rem 2rem;
+		height: 100vh;
+		box-sizing: border-box;
+	}
+
+	.name {
+		margin-bottom: -0.75rem;
+	}
+
+	.hello {
+		font-size: 2.5rem;
+		margin: 7rem 0 -0.25rem 0;
+	}
+	.greeting {
+		font-size: 2.5rem;
+	}
+
+	.about {
+		height: 40vh;
+		img {
+			margin: auto auto 4rem auto;
+			width: 95%;
+			max-width: 95%;
+		}
+
+	}
+
+	.projects {
+		padding: 7rem 1rem;
+		box-sizing: border-box;
+		position: relative;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.DnDice {
+		display: block;
+	}
+
+	.other-p-grid {
+		display: block;
+		margin-top: 9rem;
+	}
+
+	.contact {
+		height: 8rem;
+		width: 70vw;
+		font-weight: 300;
+		position: relative;
+		bottom: 0;
+		text-align: center;
+
+		span {
+			color: $red;
+		}
+	}
+}
