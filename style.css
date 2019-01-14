@@ -99,6 +99,7 @@ li {
   .DnDice a {
     grid-column: 2 / 3; }
   .DnDice p {
+    margin-top: -1rem;
     grid-column: 3 / 4; }
 
 .other-p-grid {
